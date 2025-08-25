@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I LOVE JUSTIN BIEBER</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      background: url("justin1 (1).jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 182, 193, 0.5); 
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 20px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #fff, 0 0 10px #ff69b4; }
+      to { text-shadow: 0 0 20px #fff, 0 0 30px #ff1493; }
+    }
+
+    h2 {
+      margin-top: 40px;
+      text-decoration: underline;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .gallery img {
+      width: 200px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1) rotate(2deg);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    ul li a {
+      color: #ffebf0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+      color: yellow;
+    }
+
+    iframe {
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.7);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      font-size: 0.9em;
+    }
+
+    .confetti {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 9999;
+    }
+
+    .confetti span {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: pink;
+      opacity: 0.7;
+      animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎶 Welcome to the Justin Bieber Fan Page 🎶</h1>
+  <p>This is a fan page dedicated to my favourite singer, the one and only, JUSTIN BIEBER!!! 💖</p>
+
+  <h2>About Justin Bieber</h2>
+  <p>Justin Bieber is a Canadian singer and songwriter. He became famous with the song "Baby" 
+     and has since released many hit songs like "Sorry", "Love Yourself" and "Peaches".</p>
+
+  <h2>🖼️ Photo Gallery</h2>
+  <div class="gallery">
+    <img src="justin2.jpg" alt="Justin 2">
+    <img src="justin3.jpg" alt="Justin 3">
+    <img src="justin4.jpg" alt="Justin 4">
+    <img src="justin5.jpg" alt="Justin 5">
+    <img src="justin6.jpg" alt="Justin 6">
+  </div>
+
+  <h2>🎤 Top Songs</h2>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=kffacxfA7G4" target="_blank">Baby</a></li>
+    <li><a href="https://www.youtube.com/watch?v=fRh_vgS2dFE" target="_blank">Sorry</a></li>
+    <li><a href="https://www.youtube.com/watch?v=oyEuk8j8imI" target="_blank">Love Yourself</a></li>
+    <li><a href="https://www.youtube.com/watch?v=tQ0yjYUFKAE" target="_blank">Peaches</a></li>
+    <li><a href="https://www.youtube.com/watch?v=Fp8msa5uYsc" target="_blank">Ghost</a></li>
+  </ul>
+<!-- 
+  <h2>📺 Watch Justin Bieber</h2>
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/fRh_vgS2dFE" 
+    title="Justin Bieber - Baby" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe> -->
+
+  <h2>Justin Bieber Fun Facts 🎤</h2>
+    <ul>
+      <li>Justin was discovered on YouTube when he was only 13 years old.</li>
+      <li>His debut single <em>“One Time”</em> was released in 2009.</li>
+      <li>He became the first artist to have seven songs from a debut album chart on the Billboard Hot 100.</li>
+      <li>He loves hockey and used to play in his hometown of Stratford, Ontario.</li>
+      <li>Fans of Justin (aka me) are famously called <strong>Beliebers</strong> 💜.</li>
+    </ul>
+
+
+  <h2>💌 Contact</h2>
+  <p>If you’re a Belieber too, share your love for Justin!</p>
+
+  <footer>
+    <p>Made with ❤️ by a Justin Bieber fan</p>
+  </footer>
+
+  <!-- Confetti container -->
+  <div class="confetti"></div>
+
+  <script>
+    // Generate confetti
+    const confettiContainer = document.querySelector('.confetti');
+    for (let i = 0; i < 100; i++) {
+      const confetto = document.createElement('span');
+      confetto.style.left = Math.random() * 100 + 'vw';
+      confetto.style.background = `hsl(${Math.random() * 360}, 100%, 75%)`;
+      confetto.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      confettiContainer.appendChild(confetto);
+    }
+  </script>
+</body>
+</html>
