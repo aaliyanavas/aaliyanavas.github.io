@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #b100f1;
+  color: rgb(235, 130, 227);
+  padding: 20px;
+  font-size: 2em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.profile-pic {
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #b73a96;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.bio-box, .fun-facts {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #673ab7;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+  margin: 20px auto;
+  border: 3px solid #673ab7;
+  border-radius: 10px;
+  display: block;
+}
+
+ul {
+  list-style: square;
+  text-align: left;
+  width: fit-content;
+  margin: auto;
+}
+
+button {
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #512da8;
+  transform: scale(1.1);
+}
